@@ -1,0 +1,151 @@
+/*CSS general */
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    color : #c0c0c0;
+    background-color: #677b94;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+#restartButton {
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#p4restartButton {
+    display: none;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#gameChoice button, #restartButton, #p4restartButton {
+    background-color: #b78a38;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#gameChoice button:hover, #restartButton:hover, #p4restartButton:hover {
+    background-color: #b88f41;
+}
+
+#gameChoice {
+    display: flex
+}
+
+#gameChoice button {
+    margin: 2px;
+}
+
+.red-x {
+    color: rgb(241, 80, 80);
+}
+
+.blue-o {
+    color: rgb(83, 83, 244);
+}
+
+/* Fin CSS general */
+
+/* CSS Tic Tac Toe*/
+
+#tictactoegameContainer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#rulesContainer {
+    margin-left: 20px;
+}
+
+#tictactoe {
+    display: table;
+    width: 500px;
+    height: 500px;
+    border-collapse: collapse
+}
+
+#tictactoe .gameCell {
+    display: table-cell;
+    width: 33.33%;
+    height: 33.33%;
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gameCell {
+    background-color: #b6c3cc;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+/* Fin CSS Tic Tac Toe*/
+
+/* CSS Puissance 4 */
+#p4gameContainer {
+    display: none;
+    /*flex*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#p4rulesContainer {
+    margin-left: 20px;
+}
+
+#p4table {
+    display: table;
+    width: 600px;
+    height: 600px;
+    border-collapse: collapse
+}
+
+#p4table .p4gameCell {
+    display: table-cell;
+    width: 14.28%;
+    height: 16.66%;
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.p4gameCell {
+    background-color: #b6c3cc;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+
+/* Fin CSS Puissance 4*/

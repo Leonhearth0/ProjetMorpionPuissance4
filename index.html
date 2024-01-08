@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Morpion</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <main>
+        <div id="gameChoice">
+            <button id="pvpbutton">Mode 2 joueurs
+            </button>
+            <button id="cpubutton">Mode joueur contre CPU
+            </button>
+            <button id="p4vpbutton">Mode puissance 4 à 2 joueurs
+            </button>
+            <button id="p4button">Mode puissance 4 contre CPU
+            </button>
+        </div>
+        <div id="tictactoegameContainer">
+            <div id="rulesContainer">
+                <p>Le but est d'aligner 3 symboles X ou O pour gagner</p>
+                <p>Le joueur X commence.</p>
+                <p></p>
+            </div>
+            <table id="tictactoe">
+                <tr>
+                    <td class="gameCell"></td>
+                    <td class="gameCell"></td>
+                    <td class="gameCell"></td>
+                </tr>
+                <tr>
+                    <td class="gameCell"></td>
+                    <td class="gameCell"></td>
+                    <td class="gameCell"></td>
+                </tr>
+                <tr>
+                    <td class="gameCell"></td>
+                    <td class="gameCell"></td>
+                    <td class="gameCell"></td>
+                </tr>
+            </table>
+            <div>
+                <p id="turnIndicator"></p>
+            </div>
+            <button id="restartButton">Recommencer</button>
+        </div>
+        <div id="p4gameContainer">
+            <div id="p4rulesContainer">
+                <p>Le but est d'aligner 4 symboles X ou O pour gagner</p>
+                <p>Le joueur X commence</p>
+            </div>
+            <table id="p4table">
+                <tr>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                </tr>
+                <tr>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                </tr>
+                <tr>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                </tr>
+                <tr>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                </tr>
+                <tr>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                </tr>
+                <tr>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                    <td class="p4gameCell"></td>
+                </tr>
+            </table>
+            <div>
+                <p id="p4turnIndicator"></p>
+            </div>
+            <button id="p4restartButton">Recommencer</button>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
